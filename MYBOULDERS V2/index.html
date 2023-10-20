@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Lato:wght@300&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>My Boulders</title>
+</head>
+<body>
+  <section class="header" id="accueil">
+    <nav>
+      <a href="index.html"> <img src="images/LogoMyBoulders.png" alt="logo MyBoulders"></a>
+     
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- fontawesome -->
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- la scroll bar -->
+    <div class="scroll">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>  
+    </div>
+
+    <!-- Accueil -->
+    <div class="text-box">
+      <h1>My Boulders</h1>
+      <p>Bienvenue sur MyBoulders, une application android dédiée à l'escalade de blocs !</p>
+      <a href="" class="dl-button">Téléchargez l'application</a>
+    </div>
+  </section>
+  
+
+  <!-- Fonctionnalités -->
+
+  <section class="features" id="features">
+    <h1>Les Fonctionnalités</h1>
+    <p>Avec MyBoulders, nous avons conçu des fonctionnalités spéciales pour vous offrir la meilleure expérience possible. Explorez notre gamme de fonctionnalités uniques qui rendront chaque session d'escalade encore plus enrichissante et passionnante. </p>
+
+      <div class="rowF">
+        <div class="feature-col">
+          <img class="imgF" src="./images/MockUp.PNG" alt="">
+          <div>
+            <h3>Historique des Blocs :</h3>
+            <p>MyBoulders vous permet de créer un historique personnel de chaque bloc que vous avez escaladé lors de vos entraînements. Gardez une trace de vos réalisations, suivez votre progression, et partagez vos prouesses avec la communauté. L'historique des blocs est l'outil idéal pour garder en mémoire vos moments mémorables d'escalade.</p>
+          </div>
+        </div>
+     
+    
+        <div class="feature-col">
+        <div>
+          <h3>Carte Interactive :</h3>
+          <p>Explorez une carte interactive du monde entier qui répertorie tous les sites d'escalade. Trouvez facilement de nouveaux endroits où grimper, découvrez des informations essentielles sur chaque site, et planifiez vos aventures en plein air avec confiance. La carte interactive est votre guide ultime pour découvrir les meilleurs endroits pour l'escalade de blocs.</p>
+        </div>
+        <!-- <img class="imgF" src="./images/Carte.PNG" alt=""> -->
+        <iframe src="https://kletterspots.de/climbing.html?z=6&lat=47.98256&lon=4.96582&background=osm" width="5000px" height="400px" title="Open Climbing Map with MapComplete"></iframe>
+        </div>
+     
+     
+        <div class="feature-col">
+          <!-- <img class="imgF" src="./images/Meteo.PNG" alt=""> -->
+          <div class="card">
+            <div class="search">
+              <input type="text" placeholder="Enter City name" spellcheck="false">
+              <button><img id="loupe" src="./images/search.png" alt=""></button>
+            </div>
+          <div class="error">
+            <p>Invalid city name</p>
+          </div>
+          <div class="weather">
+            <img src="rain.png" class="weather-icon" alt="rain icon">
+          <h1 class="temp">22°C</h1>
+          <h2 class="city">Carcassonne</h2>
+          <div class="details">
+          
+            <div class="col">
+          <img src="./images/humidity.png" alt="humidity icon">
+            </div>
+            <div>
+              <p class="humidity">50%</p>
+              <p>humidity</p>
+            </div>
+            <div class="col">
+              <img src="./images/wind.png" alt="wind icon">
+                </div>
+                <div>
+                  <p class="wind">15 km/h</p>
+                  <p>Wind Speed</p>
+                </div>
+          </div>
+          
+          
+          </div>
+          </div>
+          <div>
+            <h3>Météo en direct :</h3>
+          <p>Avant de partir pour votre prochaine session, consultez notre widget météo en direct. Obtenez les informations météorologiques les plus récentes pour votre région d'escalade préférée, y compris la température, les prévisions de précipitations, et bien plus encore. Ne laissez jamais la météo vous surprendre pendant votre sortie d'escalade.</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <!-- Les Témoignages -->
+
+  <Section class="testimonials" id="temoignages">
+    <h1>Les témoignages de nos utilisateurs</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis debitis fugit cum consequatur omnis natus totam ad neque inventore nesciunt sint tempore, saepe libero numquam ratione, quod dignissimos maiores odit!</p>
+    <div class="row">
+      <div class="testimonial-col">
+        <img src="./images/UserPic.PNG" alt="">
+        <div>
+        
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+        <p>Ceci est un commentaire</p>
+        <h3>Bob le grimpeur</h3>
+        </div>
+      </div>
+
+      <div class="testimonial-col">
+        <img src="./images/UserPic.PNG" alt="">
+        <div>        
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <p>Ceci est un autre commentaire</p>
+        <h3>Sarah Connor</h3>
+      </div>
+    </div>
+  </Section>
+
+
+  <!-- Call to action -->
+ <section class="cta">
+<h1>Téléchargez notre application et Préparez-vous à vivre une expérience d'escalade exceptionnelle, où que vous soyez dans le monde.</h1>
+<a href="" class="dl-button">Téléchargez l'application</a>
+</section>
+
+
+<!-- Formulaire de contact -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h1>Contactez-nous</h1>
+    <form id="contact-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+</section>
+
+
+
+
+<!-- FOoter -->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>Suivez Nous sur les réseaux Sociaux</p>
+<div class="icons">
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-twitter"></i>
+  <i class="fa fa-instagram"></i>
+</div>
+<p>Fait avec <i class="fa fa-heart"></i> par Samuel C. </p>
+</section>
+
+  <script src="app.js"></script>
+</body>
+</html>
